@@ -24,8 +24,14 @@ Since i am working on keras framework I used the "ImageDataGenerator" for augmen
 After Augmentation the dataset size increased from 434 to 2064 i.e.1032 images for each class(Modak and Non-Modak).
 
 ## Training
- 
-As mentioned above, I used the ResNet-50 Architecture. I used 70% of the dataset for training, 20% of the dataset for validation and 10% of the dataset for testing.
+
+I split the dataset as follow:-
+
+* 70% of the dataset for training
+* 20% of the dataset for validation
+* 10% of the dataset for testing.
+
+As mentioned above, I used the ResNet-50 Architecture for training the model.
 
 ## Result
 
