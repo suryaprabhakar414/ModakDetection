@@ -15,7 +15,7 @@ In this project, I have used ResNet-50 which contains 50 parameter layers.
 
 ## Data Collection
 
-I downloaded the images of Modak from google. I downloaded 217 distinct images of Modak. For, Non-Modak i used images of Egg, Dairy product, Dessert, Meat, Rice and Fried Food. I got the Non-Modak dataset from Kaggle. So there was a total of 434 images in the dataset 217 for each class(Modak and Non-Modak).
+I downloaded 217 distinct images of Modak fro google. For, Non-Modak i used images of Egg, Dairy product, Dessert, Meat, Rice and Fried Food. I got the Non-Modak dataset from Kaggle. So there was a total of 434 images in the dataset 217 for each class(Modak and Non-Modak).
 
 ## Data Augmentation
 
