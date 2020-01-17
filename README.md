@@ -15,9 +15,16 @@ In this project, I have used ResNet-50 which contains 50 parameter layers.
 
 ## Data Collection
 
-I downloaded 217 distinct images of Modak fro google. For, Non-Modak i used images of Egg, Dairy product, Dessert, Meat, Rice and Fried Food. I got the Non-Modak dataset from Kaggle. So there was a total of 434 images in the dataset 217 for each class(Modak and Non-Modak).
+I downloaded 217 distinct images of Modak from google and 217 distint Non-Modak images from Kaggle which contained images of Egg, Dairy product, Dessert, Meat, Rice and Fried Food. I got the Non-Modak dataset from Kaggle. Hence, there was a total of 434 images in the dataset, 217 for each class(Modak and Non-Modak).
 
 ## Data Augmentation
 
 Since i am working on keras framework I used the "ImageDataGenerator" for augmentation. The implementation is shown in "Augmentation.py" and the Augmented image sample is present in "Augmentation Sample". 
+
+After Augmentation the dataset size increased from 434 to 2064 i.e.1032 images for each class(Modak and Non-Modak).
+
+## Training
+ 
+As mentioned above, I used the ResNet-50 Architecture. I used 70% of the dataset for training, 20% of the dataset for validation and 10% of the dataset for testing.
+
 
