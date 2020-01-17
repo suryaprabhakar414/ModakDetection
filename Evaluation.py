@@ -34,7 +34,7 @@ X_test, y_test = shuffle(X_test, y_test, random_state=0)
 
 ### Calling the model using the weights generated after training
 
-model = def_model(pretrained_weights='Intern\Weights\Resnet50.96-0.0003-0.9873.hdf5')
+model = def_model(pretrained_weights='Project\Weights\Resnet50.96-0.0003-0.9873.hdf5')
 y_pred = model.predict(X_test)
 yp = []
 for i in y_pred:
