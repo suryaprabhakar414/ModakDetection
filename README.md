@@ -27,4 +27,6 @@ After Augmentation the dataset size increased from 434 to 2064 i.e.1032 images f
  
 As mentioned above, I used the ResNet-50 Architecture. I used 70% of the dataset for training, 20% of the dataset for validation and 10% of the dataset for testing.
 
+## Result
 
+I used the "metrics accuracy_score()" of "sklearn.metrics" package to determine the accuracy and i was able to achieve an accuracy of 97.297%. 
