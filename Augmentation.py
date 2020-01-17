@@ -11,7 +11,6 @@ datagen = ImageDataGenerator(
 path_modak = "D:/Python Scripts/Project/Modak"
 
 for imag in tqdm(os.listdir(path_modak)):
-
     i = 0
     img = load_img(os.path.join(path_modak,imag)) 
     x = img_to_array(img) 
@@ -24,7 +23,6 @@ for imag in tqdm(os.listdir(path_modak)):
 path_non_modak = "D:/Python Scripts/Project/Non_Modak"
 
 for imag in tqdm(os.listdir(path_non_modak)):
-
     i = 0
     img = load_img(os.path.join(path_non_modak,imag)) 
     x = img_to_array(img) 
