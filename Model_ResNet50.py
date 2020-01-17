@@ -3,8 +3,7 @@ from keras.models import Model
 from keras.layers import Dense, Dropout, Input
 from keras.optimizers import Adam
 
-
-
+#Model Definition
 def def_model(pretrained_weights =None):
     input=Input(shape=(224,224,3))
     res=ResNet50(input_tensor=input,include_top=False,pooling='max',weights='imagenet')
