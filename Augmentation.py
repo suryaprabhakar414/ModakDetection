@@ -9,16 +9,28 @@ datagen = ImageDataGenerator(
 		horizontal_flip = True, 
 		brightness_range = (0.5, 1.5)) 
 	
-path = "D:/Python Scripts/Intern/test"
+path_modak = "D:/Python Scripts/Project/Modak"
 
-for imag in tqdm(os.listdir(path)):
+for imag in tqdm(os.listdir(path_modak)):
 
     i = 0
-    img = load_img(os.path.join(path,imag)) 
+    img = load_img(os.path.join(path_modak,imag)) 
     x = img_to_array(img) 
     x = x.reshape((1, ) + x.shape)
-    for batch in datagen.flow(x, batch_size = 1, save_to_dir ='D:/Python Scripts/Intern/New Folder/Non-Modak',save_prefix ='image', save_format ='jpeg'):
+    for batch in datagen.flow(x, batch_size = 1, save_to_dir ='D:/Python Scripts/Project/Train/Modak',save_prefix ='image', save_format ='jpeg'):
         i += 1
-        if i > 7: 
+        if i > 6: 
             break
     
+path_non_modak = "D:/Python Scripts/Project/Non_Modak"
+
+for imag in tqdm(os.listdir(path_non_modak)):
+
+    i = 0
+    img = load_img(os.path.join(path_non_modak,imag)) 
+    x = img_to_array(img) 
+    x = x.reshape((1, ) + x.shape)
+    for batch in datagen.flow(x, batch_size = 1, save_to_dir ='D:/Python Scripts/Project/Train/Non-Modak',save_prefix ='image', save_format ='jpeg'):
+        i += 1
+        if i > 6: 
+            break
